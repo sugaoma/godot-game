@@ -19,7 +19,7 @@ func _process(delta: float) -> void:
 
 
 func _on_attackTrial():
-	Global.chosenTrial = randi_range(4, 4)
+	Global.chosenTrial = randi_range(1, 4)
 	if Global.chosenTrial == 1:
 		$Instruction.text = " Set the Vector2 position to the coordinates 200, -200:\n\n\tfunc _ready():\n\t\tposition = Vector2(\t\t\t\t\t\t\t\t\t\t\t)\n\t\tpass"
 	elif Global.chosenTrial == 2:
@@ -33,14 +33,14 @@ func _on_attackTrial():
 func _on_tacticsTrial():
 	if Global.attackName == "Recycle":
 		$Instruction.show()
-		$Instruction.text = "[center]Protogent cleared the Recycle Bin and regained Bytes![/center]"
+		$Instruction.text = "[center]Protegent cleared the Recycle Bin and regained Bytes![/center]"
 	
 func _on_playerAttack():
 	$Instruction.text = "[center]Protogent used %s on %s![/center]" % [Global.attackName, Global.enemyType]
 
 func _on_enemyAttack():
 	if Global.enemyType == "Smiling Virus":
-		$Instruction.text = "[center]Smiling Virus used Idiot Blast on Protogent![/center]"
+		$Instruction.text = "[center]Smiling Virus used Idiot Blast on Protegent![/center]"
 
 func _on_combatChoice():
 	$Instruction.hide()

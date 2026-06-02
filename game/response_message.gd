@@ -44,10 +44,12 @@ func _on_line_edit__response(lineText) -> void:
 			correctCheck = false
 	if correctCheck == true:
 		$RichTextLabel.text = "[center][color=green]Correct![/color][/center]"
+		$AudioStreamPlayer.play()
 		await get_tree().create_timer(2).timeout
 		Global._playerAttack.emit()
 	else:
 		$RichTextLabel.text = "[center][color=red]Incorrect![/color][/center]"
+		$AudioStreamPlayer2.play()
 		await get_tree().create_timer(2).timeout
 		Global._enemyAttack.emit()
 	pass
@@ -56,7 +58,7 @@ func _on_notEnough():
 	if messageSpam == false:
 		messageSpam = true
 		show()
-		$RichTextLabel.text ="[center]Not enough Bytes! Use Recycle to get more bytes![/center]"
+		$RichTextLabel.text ="[center]Not enough Bytes! Use Recycle to get more![/center]"
 		await get_tree().create_timer(1).timeout
 		hide()
 		messageSpam = false

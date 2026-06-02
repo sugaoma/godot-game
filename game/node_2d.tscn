@@ -56,6 +56,8 @@
 [ext_resource type="BitMap" uid="uid://cgwttb7cy2a73" path="res://USB Bitmap.png" id="33_kfelt"]
 [ext_resource type="Script" uid="uid://cqgabw3td14nj" path="res://usb.gd" id="34_ytlpd"]
 [ext_resource type="AudioStream" uid="uid://buvnncmpl7byv" path="res://Explosion Roblox.mp3" id="36_ma08v"]
+[ext_resource type="AudioStream" uid="uid://3esxq1x7debr" path="res://Ding Sound.mp3" id="40_s32dh"]
+[ext_resource type="AudioStream" uid="uid://qthwxq4e7cyi" path="res://Combat Enter Sound.mp3" id="45_037st"]
 
 [sub_resource type="Gradient" id="Gradient_k73cj"]
 interpolation_mode = 1
@@ -755,6 +757,12 @@ theme_override_font_sizes/normal_font_size = 25
 bbcode_enabled = true
 scroll_active = false
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="BattleUI/Control/ResponseMessage" unique_id=900270295]
+stream = ExtResource("40_s32dh")
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="BattleUI/Control/ResponseMessage" unique_id=534748378]
+stream = ExtResource("19_ytlpd")
+
 [node name="Byte Count" type="PanelContainer" parent="BattleUI/Control" unique_id=1064683280]
 layout_mode = 0
 offset_left = 1062.0
@@ -999,6 +1007,7 @@ libraries/ = SubResource("AnimationLibrary_mryly")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="BattleUI/Control/SmileyVirus" unique_id=1712960408]
 stream = ExtResource("31_b8fb0")
+volume_db = -20.0
 
 [node name="BlockSignAttack" type="TextureRect" parent="BattleUI/Control" unique_id=1094087709]
 visible = false
@@ -1028,6 +1037,7 @@ libraries/ = SubResource("AnimationLibrary_3ngjr")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="BattleUI/Control/SmileyVirusAttack" unique_id=1267574070]
 stream = ExtResource("36_ma08v")
+volume_db = -10.0
 
 [node name="USB" type="TextureButton" parent="." unique_id=1118475036]
 visible = false
@@ -1064,8 +1074,7 @@ mouse_filter = 2
 texture = ExtResource("5_7vxoj")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="USB" unique_id=1581611255]
-stream = ExtResource("12_kfelt")
-volume_db = 24.0
+stream = ExtResource("40_s32dh")
 
 [node name="Mail" type="TextureButton" parent="." unique_id=1261983823]
 visible = false
@@ -1092,8 +1101,7 @@ mouse_filter = 2
 texture = ExtResource("5_7vxoj")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Mail" unique_id=463504509]
-stream = ExtResource("12_kfelt")
-volume_db = 24.0
+stream = ExtResource("40_s32dh")
 
 [node name="EnemyArea1" type="Area2D" parent="." unique_id=72779355]
 position = Vector2(487, -360)
@@ -1113,6 +1121,9 @@ frame = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="EnemyArea1" unique_id=651066515]
 libraries/ = SubResource("AnimationLibrary_fs4d3")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="EnemyArea1" unique_id=1745713683]
+stream = ExtResource("45_037st")
 
 [node name="Area2D4" type="Area2D" parent="." unique_id=1222649980]
 script = ExtResource("2_nr8wp")
@@ -1147,7 +1158,6 @@ shape = SubResource("RectangleShape2D_rj586")
 [node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=2079698767]
 
 [node name="TextureRect" type="TextureRect" parent="ParallaxBackground" unique_id=232617510]
-visible = false
 texture_filter = 1
 offset_right = 383.39996
 offset_bottom = 217.4
@@ -1251,6 +1261,7 @@ limit_enabled = false
 [connection signal="body_entered" from="Area2D3" to="Area2D3" method="_on_body_entered"]
 [connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_body_entered"]
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="_sceneChange" from="CanvasLayer" to="USB" method="_on_canvas_layer__scene_change"]
 [connection signal="_sceneChange" from="CanvasLayer" to="Mail" method="_on_canvas_layer__scene_change"]
 [connection signal="_sceneChange" from="CanvasLayer" to="EnemyArea1" method="_on_canvas_layer__scene_change"]
 [connection signal="_sceneChange" from="CanvasLayer" to="Area2D4" method="_on_canvas_layer__scene_change"]
@@ -1259,4 +1270,3 @@ limit_enabled = false
 [connection signal="_sceneChange" from="CanvasLayer" to="Area2D" method="_on_canvas_layer__scene_change"]
 [connection signal="_sceneChange" from="CanvasLayer" to="CanvasLayer/TileMapLayer" method="_on_canvas_layer__scene_change"]
 [connection signal="_sceneChange" from="CanvasLayer" to="CharacterBody2D" method="_on_canvas_layer__scene_change"]
-[connection signal="_sceneChange" from="CanvasLayer" to="USB" method="_on_canvas_layer__scene_change"]

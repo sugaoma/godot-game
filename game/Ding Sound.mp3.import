@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://3esxq1x7debr"
+path="res://.godot/imported/Ding Sound.mp3-86ebb2e184bbb842f1e9a83ffaee178d.mp3str"
+
+[deps]
+
+source_file="res://Ding Sound.mp3"
+dest_files=["res://.godot/imported/Ding Sound.mp3-86ebb2e184bbb842f1e9a83ffaee178d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

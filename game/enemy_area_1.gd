@@ -36,6 +36,7 @@ func _on_canvas_layer__scene_change() -> void:
 
 func _on_body_entered(body):
 	if body.name == "CharacterBody2D":
+		$AudioStreamPlayer.play()
 		Global.enemyType = "Smiling Virus"
 		Global._stopMovement.emit()
 		Global._combatStart.emit()

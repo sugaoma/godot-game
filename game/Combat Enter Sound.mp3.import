@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://qthwxq4e7cyi"
+path="res://.godot/imported/Combat Enter Sound.mp3-b6c2faaac3d82b40f479edce0e1ad959.mp3str"
+
+[deps]
+
+source_file="res://Combat Enter Sound.mp3"
+dest_files=["res://.godot/imported/Combat Enter Sound.mp3-b6c2faaac3d82b40f479edce0e1ad959.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

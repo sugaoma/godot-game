@@ -14,7 +14,10 @@ func _process(delta: float) -> void:
 
 func _on_combatStart():
 	if Global.enemyType == "Smiling Virus":
-		Global.enemyHP = 500
+		if Global.mapID == 4:
+			Global.enemyHP = 500
+		elif Global.mapID == 6:
+			Global.enemyHP = 800
 	process_mode = Node.PROCESS_MODE_INHERIT
 	await get_tree().create_timer(2).timeout
 	tween = create_tween()

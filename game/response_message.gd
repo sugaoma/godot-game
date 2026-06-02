@@ -1,6 +1,7 @@
 extends ColorRect
 
 var correctCheck = false
+var messageSpam = false
 
 func _ready() -> void:
 	Global._combatStart.connect(_on_combatStart)
@@ -31,6 +32,16 @@ func _on_line_edit__response(lineText) -> void:
 			correctCheck = true
 		else:
 			correctCheck = false
+	elif Global.chosenTrial == 3:
+		if lineText == "flip_h=true":
+			correctCheck = true
+		else:
+			correctCheck = false
+	elif Global.chosenTrial == 4:
+		if lineText == "message.emit()" or lineText == "emit_signal(\"message\")":
+			correctCheck = true
+		else:
+			correctCheck = false
 	if correctCheck == true:
 		$RichTextLabel.text = "[center][color=green]Correct![/color][/center]"
 		await get_tree().create_timer(2).timeout
@@ -42,10 +53,13 @@ func _on_line_edit__response(lineText) -> void:
 	pass
 
 func _on_notEnough():
-	show()
-	$RichTextLabel.text ="[center]Not enough bytes! Use Recycle to get more bytes![/center]"
-	await get_tree().create_timer(1).timeout
-	hide()
+	if messageSpam == false:
+		messageSpam = true
+		show()
+		$RichTextLabel.text ="[center]Not enough Bytes! Use Recycle to get more bytes![/center]"
+		await get_tree().create_timer(1).timeout
+		hide()
+		messageSpam = false
 	
 func _on_playerAttack():
 	hide()

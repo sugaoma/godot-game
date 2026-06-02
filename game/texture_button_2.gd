@@ -20,6 +20,7 @@ func _on_mouse_exited():
 
 func _on_button_down():
 	hide()
+	$AudioStreamPlayer.play()
 	Global.actionType = "Tactics"
 	Global._combatChoice.emit()
 

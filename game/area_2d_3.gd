@@ -11,6 +11,8 @@ func _on_body_entered(body):
 	if body.name == "CharacterBody2D":
 		if Global.mapID == 2:
 			Global.mapID = 3
+		if Global.mapID == 4:
+			Global.mapID = 5
 		Global.mapExitID = 3
 		Global._fade.emit()
 		Global._stopMovement.emit()

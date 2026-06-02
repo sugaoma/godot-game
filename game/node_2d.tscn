@@ -33,6 +33,7 @@
 [ext_resource type="Texture2D" uid="uid://bed4f5r3v4ptn" path="res://Block New.png" id="12_2u7jv"]
 [ext_resource type="BitMap" uid="uid://ceuhk8oedktt1" path="res://Block New Bitmap.png" id="12_24dk6"]
 [ext_resource type="Script" uid="uid://dubhl8jw5hobl" path="res://combat_protogent.gd" id="12_gt76g"]
+[ext_resource type="AudioStream" uid="uid://cwmav2vi3rcbp" path="res://Mouse Click.mp3" id="12_kfelt"]
 [ext_resource type="Script" uid="uid://b3miakncebfi3" path="res://smiley_virus.gd" id="14_1fr6y"]
 [ext_resource type="Texture2D" uid="uid://cg8bpjq2dcu31" path="res://Protogent Punch New.png" id="14_6ip5v"]
 [ext_resource type="BitMap" uid="uid://crjd6ymbyhgbv" path="res://Protogent Punch New Bitmap.png" id="15_q5dlx"]
@@ -40,6 +41,7 @@
 [ext_resource type="Script" uid="uid://bo05eavf0x37w" path="res://notification.gd" id="18_cnnru"]
 [ext_resource type="Texture2D" uid="uid://d1tm8wp4rr5kh" path="res://New Mail.png" id="18_ornx7"]
 [ext_resource type="Texture2D" uid="uid://cxah2pjphmmo2" path="res://Mail Opened.png" id="19_cnnru"]
+[ext_resource type="AudioStream" uid="uid://c02io4i83r7xb" path="res://Windows Fail.mp3" id="19_ytlpd"]
 [ext_resource type="Texture2D" uid="uid://5k4l0bb6nm0d" path="res://Block Sign Only.png" id="20_fbwgr"]
 [ext_resource type="Texture2D" uid="uid://7qqerow155rb" path="res://Recycle File New.png" id="21_3ngjr"]
 [ext_resource type="Script" uid="uid://rluj7ixe6oji" path="res://mail.gd" id="21_6ip5v"]
@@ -48,6 +50,9 @@
 [ext_resource type="Script" uid="uid://dt5qfp5nufelc" path="res://recycle_tactics.gd" id="23_4qosj"]
 [ext_resource type="Texture2D" uid="uid://bdwk7q755u31l" path="res://YOU ARE AN IDIOT Spritesheet.png" id="26_lbrxf"]
 [ext_resource type="Script" uid="uid://cqqd277eudiun" path="res://smiley_virus_attack.gd" id="27_xjt7e"]
+[ext_resource type="Texture2D" uid="uid://jts5y2ppk64f" path="res://USB.png" id="32_cjlbh"]
+[ext_resource type="BitMap" uid="uid://cgwttb7cy2a73" path="res://USB Bitmap.png" id="33_kfelt"]
+[ext_resource type="Script" uid="uid://cqgabw3td14nj" path="res://usb.gd" id="34_ytlpd"]
 
 [sub_resource type="Gradient" id="Gradient_k73cj"]
 interpolation_mode = 1
@@ -390,6 +395,12 @@ tile_data = PackedInt32Array(0, 0, 0, 65536, 1, 0, 131072, 1, 0, 196608, 1, 0, 2
 [sub_resource type="TileMapPattern" id="TileMapPattern_ta5nu"]
 tile_data = PackedInt32Array(0, 1, 1610612736, 262144, 1, 1342177280, 1, 1, 1610612736, 262145, 1, 1342177280, 2, 1, 1610612736, 262146, 0, 1342177280, 3, 1, 1610612736, 4, 1, 1610612736, 5, 1, 1610612736, 6, 3, 0, 65542, 1, 0, 131078, 1, 0, 196614, 1, 0, 262150, 1, 0, 7, 1, 805306368, 65543, 1, 805306368, 131079, 1, 805306368, 196615, 1, 805306368, 262151, 1, 805306368)
 
+[sub_resource type="TileMapPattern" id="TileMapPattern_3ngjr"]
+tile_data = PackedInt32Array(0, 1, 0, 65536, 1, 0, 131072, 1, 0, 196608, 1, 0, 262144, 1, 0, 1, 1, 805306368, 65537, 1, 805306368, 131073, 1, 805306368, 196609, 1, 805306368, 262145, 3, 0, 262146, 1, 1342177280, 262147, 1, 1342177280, 262148, 1, 1342177280, 5, 0, 1610612736, 262149, 1, 1342177280, 6, 1, 1610612736, 262150, 1, 1342177280, 7, 1, 1610612736, 262151, 1, 1342177280)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_cjlbh"]
+tile_data = PackedInt32Array(0, 1, 0, 65536, 1, 0, 131072, 1, 0, 196608, 1, 0, 262144, 1, 0, 1, 1, 805306368, 65537, 1, 805306368, 131073, 1, 805306368, 196609, 1, 805306368, 262145, 1, 805306368, 5, 1, 0, 65541, 1, 0, 131077, 1, 0, 196613, 1, 0, 262149, 1, 0, 6, 1, 805306368, 65542, 1, 805306368, 131078, 1, 805306368, 196614, 1, 805306368, 262150, 3, 0, 262151, 1, 1342177280)
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kdubu"]
 texture = ExtResource("3_kdubu")
 texture_region_size = Vector2i(100, 100)
@@ -559,6 +570,8 @@ pattern_0 = SubResource("TileMapPattern_rj586")
 pattern_1 = SubResource("TileMapPattern_hqns4")
 pattern_2 = SubResource("TileMapPattern_x0ka3")
 pattern_3 = SubResource("TileMapPattern_ta5nu")
+pattern_4 = SubResource("TileMapPattern_3ngjr")
+pattern_5 = SubResource("TileMapPattern_cjlbh")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hqns4"]
 size = Vector2(34.848473, 38.95835)
@@ -642,6 +655,7 @@ script = ExtResource("1_0hol4")
 layer = 3
 
 [node name="Control" type="Control" parent="BattleUI" unique_id=192689775]
+visible = false
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -796,6 +810,10 @@ offset_bottom = 194.0
 mouse_filter = 2
 texture = ExtResource("5_7vxoj")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="BattleUI/Control/TextureButton" unique_id=173668972]
+stream = ExtResource("12_kfelt")
+volume_db = 24.0
+
 [node name="TextureButton2" type="TextureButton" parent="BattleUI/Control" unique_id=454377364]
 texture_filter = 1
 layout_mode = 0
@@ -818,6 +836,10 @@ offset_bottom = 194.0
 mouse_filter = 2
 texture = ExtResource("5_7vxoj")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="BattleUI/Control/TextureButton2" unique_id=1693002891]
+stream = ExtResource("12_kfelt")
+volume_db = 24.0
+
 [node name="Back Arrow" type="TextureButton" parent="BattleUI/Control" unique_id=1153642904]
 layout_mode = 0
 offset_left = -86.0
@@ -830,6 +852,10 @@ script = ExtResource("10_bjha6")
 position = Vector2(57, 27.5)
 points = PackedVector2Array(0, 0, -50, 0, -25, -25, -50, 0, -25, 25)
 default_color = Color(0, 0, 0, 1)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="BattleUI/Control/Back Arrow" unique_id=1631416211]
+stream = ExtResource("12_kfelt")
+volume_db = 24.0
 
 [node name="BlockAttack" type="TextureButton" parent="BattleUI/Control" unique_id=2001821610]
 texture_filter = 1
@@ -853,6 +879,10 @@ offset_bottom = 238.0
 mouse_filter = 2
 texture = ExtResource("5_7vxoj")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="BattleUI/Control/BlockAttack" unique_id=2030134109]
+stream = ExtResource("19_ytlpd")
+volume_db = 5.0
+
 [node name="ProtogentPunchAttack" type="TextureButton" parent="BattleUI/Control" unique_id=1959744858]
 texture_filter = 1
 layout_mode = 0
@@ -875,6 +905,10 @@ offset_bottom = 241.0
 mouse_filter = 2
 texture = ExtResource("5_7vxoj")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="BattleUI/Control/ProtogentPunchAttack" unique_id=2049417395]
+stream = ExtResource("19_ytlpd")
+volume_db = 5.0
+
 [node name="RecycleTactics" type="TextureButton" parent="BattleUI/Control" unique_id=2021382103]
 texture_filter = 1
 layout_mode = 0
@@ -896,6 +930,10 @@ offset_right = 249.0
 offset_bottom = 226.0
 mouse_filter = 2
 texture = ExtResource("5_7vxoj")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="BattleUI/Control/RecycleTactics" unique_id=1727991546]
+stream = ExtResource("12_kfelt")
+volume_db = 24.0
 
 [node name="CombatProtogent" type="Sprite2D" parent="BattleUI/Control" unique_id=1721921289]
 texture_filter = 1
@@ -968,7 +1006,42 @@ script = ExtResource("27_xjt7e")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="BattleUI/Control/SmileyVirusAttack" unique_id=844748604]
 libraries/ = SubResource("AnimationLibrary_3ngjr")
 
+[node name="USB" type="TextureButton" parent="." unique_id=1118475036]
+visible = false
+texture_filter = 1
+offset_left = 656.0
+offset_top = 582.0
+offset_right = 968.0
+offset_bottom = 894.0
+toggle_mode = true
+texture_normal = ExtResource("32_cjlbh")
+texture_click_mask = ExtResource("33_kfelt")
+stretch_mode = 0
+script = ExtResource("34_ytlpd")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="USB" unique_id=998825043]
+layout_mode = 0
+offset_left = 145.0
+offset_top = 163.0
+offset_right = 190.0
+offset_bottom = 205.0
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 25
+bbcode_enabled = true
+text = "[color=green]$5"
+
+[node name="TextureRect" type="TextureRect" parent="USB" unique_id=1664514420]
+texture_filter = 1
+layout_mode = 0
+offset_left = 135.0
+offset_top = 176.0
+offset_right = 235.0
+offset_bottom = 276.0
+mouse_filter = 2
+texture = ExtResource("5_7vxoj")
+
 [node name="Mail" type="TextureButton" parent="." unique_id=1261983823]
+visible = false
 texture_filter = 1
 offset_left = 867.5
 offset_top = 446.5
@@ -992,6 +1065,7 @@ mouse_filter = 2
 texture = ExtResource("5_7vxoj")
 
 [node name="EnemyArea1" type="Area2D" parent="." unique_id=72779355]
+position = Vector2(487, -360)
 script = ExtResource("2_ta5nu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyArea1" unique_id=102192371]
@@ -1132,6 +1206,11 @@ limit_enabled = false
 [connection signal="button_down" from="BattleUI/Control/RecycleTactics" to="BattleUI/Control/RecycleTactics" method="_on_button_down"]
 [connection signal="mouse_entered" from="BattleUI/Control/RecycleTactics" to="BattleUI/Control/RecycleTactics" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="BattleUI/Control/RecycleTactics" to="BattleUI/Control/RecycleTactics" method="_on_mouse_exited"]
+[connection signal="increaseMaxBytes" from="USB" to="BattleUI/Control/Byte Count" method="_on_usb_increase_max_bytes"]
+[connection signal="increaseMaxBytes" from="USB" to="CanvasLayer/Notification" method="_on_usb_increase_max_bytes"]
+[connection signal="mouse_entered" from="USB" to="USB" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="USB" to="USB" method="_on_mouse_exited"]
+[connection signal="toggled" from="USB" to="USB" method="_on_toggled"]
 [connection signal="messageProtogentPunch" from="Mail" to="CanvasLayer/Notification" method="_on_mail_message_protogent_punch"]
 [connection signal="mouse_entered" from="Mail" to="Mail" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Mail" to="Mail" method="_on_mouse_exited"]
@@ -1149,3 +1228,4 @@ limit_enabled = false
 [connection signal="_sceneChange" from="CanvasLayer" to="Area2D" method="_on_canvas_layer__scene_change"]
 [connection signal="_sceneChange" from="CanvasLayer" to="CanvasLayer/TileMapLayer" method="_on_canvas_layer__scene_change"]
 [connection signal="_sceneChange" from="CanvasLayer" to="CharacterBody2D" method="_on_canvas_layer__scene_change"]
+[connection signal="_sceneChange" from="CanvasLayer" to="USB" method="_on_canvas_layer__scene_change"]

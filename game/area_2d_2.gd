@@ -11,15 +11,17 @@ func _on_body_entered(body):
 	if body.name == "CharacterBody2D":
 		if Global.mapID == 2:
 			Global.mapID = 1
-		if Global.mapID == 4:
+		elif Global.mapID == 4:
 			Global.mapID = 2
+		elif Global.mapID == 6:
+			Global.mapID = 5
 		Global.mapExitID = 2
 		Global._fade.emit()
 		Global._stopMovement.emit()
 	pass
 
 func _on_canvas_layer__scene_change() -> void:
-	if Global.mapID == 2 or Global.mapID == 4:
+	if Global.mapID == 2 or Global.mapID == 4 or Global.mapID == 6:
 		$CollisionShape2D.disabled = false
 	else:
 		$CollisionShape2D.disabled = true

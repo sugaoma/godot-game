@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dhwdkgh2c7o5s"
+path="res://.godot/imported/Virus Sound.mp3-22ab1b3dab433856a502171906ae3d9b.mp3str"
+
+[deps]
+
+source_file="res://Virus Sound.mp3"
+dest_files=["res://.godot/imported/Virus Sound.mp3-22ab1b3dab433856a502171906ae3d9b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

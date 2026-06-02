@@ -13,3 +13,11 @@ func _on_mail_message_protogent_punch() -> void:
 	await get_tree().create_timer(4).timeout
 	hide()
 	pass
+
+
+func _on_usb_increase_max_bytes() -> void:
+	$RichTextLabel.text = "[center][b]Purchased Small USB for [color=green]$5[/color]! Max Bytes increased by 1![/b][/center]"
+	show()
+	await get_tree().create_timer(4).timeout
+	hide()
+	pass

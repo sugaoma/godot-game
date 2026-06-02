@@ -19,10 +19,13 @@ func _on_attackTrial():
 	editable = true
 	if Global.chosenTrial == 1:
 		position = Vector2(186, 53)
-		show()
 	elif Global.chosenTrial == 2:
 		position = Vector2(-41, 197.5)
-		show()
+	elif Global.chosenTrial == 3:
+		position = Vector2(-41, 53)
+	elif Global.chosenTrial == 4:
+		position = Vector2(-41, 125)
+	show()
 
 func _on_text_submitted(new_text: String) -> void:
 	editable = false

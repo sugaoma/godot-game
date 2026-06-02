@@ -3,7 +3,6 @@ extends Sprite2D
 
 var tween = create_tween()
 var playerDamage = 0
-signal _combatEnd
 
 func _ready() -> void:
 	$RichTextLabel.hide()
@@ -21,6 +20,7 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_combatStart():
+	scale = Vector2(4.3, 4.3)
 	if Global.enemyType == "Smiling Virus":
 		show()
 		$AnimationPlayer.play("Virus Idle")
@@ -62,8 +62,7 @@ func _on_combatEnd():
 	tween.tween_property(self, "scale", Vector2(0.01, 0.01), 0.5)
 	await tween.finished
 	hide()
-	scale = Vector2(1, 1)
 
 func _on_tacticsTrial():
-	await get_tree().create_timer(1).timeout
+	await get_tree().create_timer(1.5).timeout
 	Global._enemyAttack.emit()

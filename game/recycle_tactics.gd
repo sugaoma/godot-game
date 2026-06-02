@@ -11,6 +11,7 @@ func _process(delta: float) -> void:
 
 func _on_button_down() -> void:
 	hide()
+	$AudioStreamPlayer.play()
 	if Global.maxBytes > 3:
 		Global.maxBytes -= 1
 	Global.bytes = Global.maxBytes

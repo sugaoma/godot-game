@@ -25,6 +25,12 @@ func _on_canvas_layer__scene_change() -> void:
 	elif Global.mapID == 4:
 		placement = Vector2(0, 0)
 		chosenPattern = tile_set.get_pattern(3)
+	elif Global.mapID == 5:
+		placement = Vector2(1, 0)
+		chosenPattern = tile_set.get_pattern(4)
+	elif Global.mapID == 6:
+		placement = Vector2(1, 0)
+		chosenPattern = tile_set.get_pattern(5)
 	
 	set_pattern(placement, chosenPattern)
 	pass

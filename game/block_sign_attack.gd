@@ -13,11 +13,11 @@ func _process(delta: float) -> void:
 func _on_playerAttack():
 	if Global.attackName == "Block":
 		await get_tree().create_timer(1.2).timeout
-		position = Vector2(757, -500)
+		position = Vector2(758.5, -500)
 		modulate.a = 1
 		show()
 		tween = create_tween()
-		tween.tween_property(self, "position", Vector2(757, 450), 0.2)
+		tween.tween_property(self, "position", Vector2(758.5, 440), 0.2)
 		tween.tween_property(self, "modulate:a", 0.0, 0.4)
 		await tween.finished
 		hide()

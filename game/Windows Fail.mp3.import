@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c02io4i83r7xb"
+path="res://.godot/imported/Windows Fail.mp3-0ad3af6eb29d5972bca9e3dea8af2916.mp3str"
+
+[deps]
+
+source_file="res://Windows Fail.mp3"
+dest_files=["res://.godot/imported/Windows Fail.mp3-0ad3af6eb29d5972bca9e3dea8af2916.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

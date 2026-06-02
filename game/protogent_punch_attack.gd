@@ -17,6 +17,7 @@ func _on_button_down() -> void:
 		Global.attackName = "Protogent Punch"
 		Global._attackTrial.emit()
 	else:
+		$AudioStreamPlayer.play()
 		Global._notEnough.emit()
 
 func _on_combatChoice():

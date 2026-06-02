@@ -50,9 +50,12 @@
 [ext_resource type="Script" uid="uid://dt5qfp5nufelc" path="res://recycle_tactics.gd" id="23_4qosj"]
 [ext_resource type="Texture2D" uid="uid://bdwk7q755u31l" path="res://YOU ARE AN IDIOT Spritesheet.png" id="26_lbrxf"]
 [ext_resource type="Script" uid="uid://cqqd277eudiun" path="res://smiley_virus_attack.gd" id="27_xjt7e"]
+[ext_resource type="AudioStream" uid="uid://3l1mt6yeuyeq" path="res://Pan Sound.mp3" id="28_2v765"]
+[ext_resource type="AudioStream" uid="uid://dhwdkgh2c7o5s" path="res://Virus Sound.mp3" id="31_b8fb0"]
 [ext_resource type="Texture2D" uid="uid://jts5y2ppk64f" path="res://USB.png" id="32_cjlbh"]
 [ext_resource type="BitMap" uid="uid://cgwttb7cy2a73" path="res://USB Bitmap.png" id="33_kfelt"]
 [ext_resource type="Script" uid="uid://cqgabw3td14nj" path="res://usb.gd" id="34_ytlpd"]
+[ext_resource type="AudioStream" uid="uid://buvnncmpl7byv" path="res://Explosion Roblox.mp3" id="36_ma08v"]
 
 [sub_resource type="Gradient" id="Gradient_k73cj"]
 interpolation_mode = 1
@@ -879,6 +882,10 @@ offset_bottom = 238.0
 mouse_filter = 2
 texture = ExtResource("5_7vxoj")
 
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="BattleUI/Control/BlockAttack" unique_id=1086057504]
+stream = ExtResource("12_kfelt")
+volume_db = 24.0
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="BattleUI/Control/BlockAttack" unique_id=2030134109]
 stream = ExtResource("19_ytlpd")
 volume_db = 5.0
@@ -904,6 +911,10 @@ offset_right = 246.0
 offset_bottom = 241.0
 mouse_filter = 2
 texture = ExtResource("5_7vxoj")
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="BattleUI/Control/ProtogentPunchAttack" unique_id=1881621490]
+stream = ExtResource("12_kfelt")
+volume_db = 24.0
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="BattleUI/Control/ProtogentPunchAttack" unique_id=2049417395]
 stream = ExtResource("19_ytlpd")
@@ -960,6 +971,9 @@ scroll_active = false
 root_node = NodePath("../..")
 libraries/ = SubResource("AnimationLibrary_2u7jv")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="BattleUI/Control/CombatProtogent" unique_id=1133649237]
+stream = ExtResource("28_2v765")
+
 [node name="SmileyVirus" type="Sprite2D" parent="BattleUI/Control" unique_id=1478376971]
 texture_filter = 1
 position = Vector2(1058, 653.50006)
@@ -983,6 +997,9 @@ scroll_active = false
 [node name="AnimationPlayer" type="AnimationPlayer" parent="BattleUI/Control/SmileyVirus" unique_id=1711558736]
 libraries/ = SubResource("AnimationLibrary_mryly")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="BattleUI/Control/SmileyVirus" unique_id=1712960408]
+stream = ExtResource("31_b8fb0")
+
 [node name="BlockSignAttack" type="TextureRect" parent="BattleUI/Control" unique_id=1094087709]
 visible = false
 z_index = 3
@@ -995,6 +1012,9 @@ offset_bottom = 131.5
 texture = ExtResource("20_fbwgr")
 script = ExtResource("21_7mj2a")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="BattleUI/Control/BlockSignAttack" unique_id=1435388929]
+stream = ExtResource("28_2v765")
+
 [node name="SmileyVirusAttack" type="Sprite2D" parent="BattleUI/Control" unique_id=1348608667]
 texture_filter = 1
 position = Vector2(1059, 714.5)
@@ -1005,6 +1025,9 @@ script = ExtResource("27_xjt7e")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="BattleUI/Control/SmileyVirusAttack" unique_id=844748604]
 libraries/ = SubResource("AnimationLibrary_3ngjr")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="BattleUI/Control/SmileyVirusAttack" unique_id=1267574070]
+stream = ExtResource("36_ma08v")
 
 [node name="USB" type="TextureButton" parent="." unique_id=1118475036]
 visible = false
@@ -1040,6 +1063,10 @@ offset_bottom = 276.0
 mouse_filter = 2
 texture = ExtResource("5_7vxoj")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="USB" unique_id=1581611255]
+stream = ExtResource("12_kfelt")
+volume_db = 24.0
+
 [node name="Mail" type="TextureButton" parent="." unique_id=1261983823]
 visible = false
 texture_filter = 1
@@ -1063,6 +1090,10 @@ offset_right = 196.0
 offset_bottom = 182.0
 mouse_filter = 2
 texture = ExtResource("5_7vxoj")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Mail" unique_id=463504509]
+stream = ExtResource("12_kfelt")
+volume_db = 24.0
 
 [node name="EnemyArea1" type="Area2D" parent="." unique_id=72779355]
 position = Vector2(487, -360)

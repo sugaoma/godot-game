@@ -18,6 +18,7 @@ func _on_playerAttack():
 		show()
 		tween = create_tween()
 		tween.tween_property(self, "position", Vector2(758.5, 440), 0.2)
+		$AudioStreamPlayer.play()
 		tween.tween_property(self, "modulate:a", 0.0, 0.4)
 		await tween.finished
 		hide()

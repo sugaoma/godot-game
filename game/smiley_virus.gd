@@ -53,9 +53,12 @@ func _on_playerAttack():
 		Global._enemyAttack.emit()
 
 func _on_enemyAttack():
+	$AudioStreamPlayer.play()
 	$AnimationPlayer.play("Virus Attack")
 	await get_tree().create_timer(2.2).timeout
 	$AnimationPlayer.play("Virus Idle")
+	await get_tree().create_timer(1.4).timeout
+	$AudioStreamPlayer.stop()
 
 func _on_combatEnd():
 	tween = create_tween()

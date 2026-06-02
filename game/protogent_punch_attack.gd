@@ -12,6 +12,7 @@ func _process(delta: float) -> void:
 func _on_button_down() -> void:
 	if Global.bytes >= 3:
 		hide()
+		$AudioStreamPlayer2.play()
 		Global.bytes -= 3
 		Global.actionType = ""
 		Global.attackName = "Protogent Punch"

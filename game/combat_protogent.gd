@@ -32,7 +32,9 @@ func _on_playerAttack():
 		tween.tween_property(self, "position", Vector2(800, 648.5), 0.8)
 		await tween.finished
 		$AnimationPlayer.play("Protogent Combat Punch")
-		await get_tree().create_timer(0.9).timeout
+		await get_tree().create_timer(0.6).timeout
+		$AudioStreamPlayer.play()
+		await get_tree().create_timer(0.3).timeout
 		flip_h = false
 		$AnimationPlayer.play("Protogent Combat Walk")
 		tween = create_tween()

@@ -22,6 +22,7 @@ func _on_enemyAttack():
 	tween.tween_property(self, "position", Vector2(-16, 735), 0.5)
 	await tween.finished
 	tween = create_tween()
+	$AudioStreamPlayer.play()
 	tween.set_parallel(true)
 	tween.tween_property(self, "scale", Vector2(4, 4), 0.3)
 	tween.tween_property(self, "modulate:a", 0, 0.3)

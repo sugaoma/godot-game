@@ -21,6 +21,7 @@ func _on_canvas_layer__scene_change() -> void:
 
 
 func _on_toggled(toggled_on: bool) -> void:
+	$AudioStreamPlayer.play()
 	increaseMaxBytes.emit()
 	if toggled_on:
 		usbMap5 = true

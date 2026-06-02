@@ -29,6 +29,7 @@ func _on_mouse_exited():
 
 
 func _on_toggled(toggled_on: bool) -> void:
+	$AudioStreamPlayer.play()
 	if toggled_on:
 		Global.ownProtogentPunch = true
 		messageProtogentPunch.emit()

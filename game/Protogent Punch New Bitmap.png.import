@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://crjd6ymbyhgbv"
+path="res://.godot/imported/Protogent Punch New Bitmap.png-ab2c01a5a01e7c9b2304bae5bc1bc0ef.res"
+
+[deps]
+
+source_file="res://Protogent Punch New Bitmap.png"
+dest_files=["res://.godot/imported/Protogent Punch New Bitmap.png-ab2c01a5a01e7c9b2304bae5bc1bc0ef.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

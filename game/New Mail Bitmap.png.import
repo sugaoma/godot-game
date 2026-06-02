@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://uexnyiwu6mlh"
+path="res://.godot/imported/New Mail Bitmap.png-3054bbc7ff3c10311321b7f447229195.res"
+
+[deps]
+
+source_file="res://New Mail Bitmap.png"
+dest_files=["res://.godot/imported/New Mail Bitmap.png-3054bbc7ff3c10311321b7f447229195.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

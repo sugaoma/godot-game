@@ -1,0 +1,1151 @@
+[gd_scene format=3 uid="uid://cjd5yc4r2umcv"]
+
+[ext_resource type="Script" uid="uid://c0jmuleupns5n" path="res://node_2d.gd" id="1_0hol4"]
+[ext_resource type="Texture2D" uid="uid://wcce4gr8n0pj" path="res://Grass Background.png" id="1_wtcfe"]
+[ext_resource type="Texture2D" uid="uid://bgi78ojgc7hkj" path="res://Protogent Spritesheet.png" id="2_0e48y"]
+[ext_resource type="Script" uid="uid://c0j8fvehyrll8" path="res://area_2d_3.gd" id="2_0h7mo"]
+[ext_resource type="Texture2D" uid="uid://cf1stlu138t3w" path="res://Touch Grass.jpg" id="2_flf07"]
+[ext_resource type="Script" uid="uid://bj1x8bk5ob50h" path="res://area_2d.gd" id="2_ir8iy"]
+[ext_resource type="Script" uid="uid://diae7ykr3dla2" path="res://control.gd" id="2_k73cj"]
+[ext_resource type="Script" uid="uid://bv3i4mq24hicx" path="res://area_2d_4.gd" id="2_nr8wp"]
+[ext_resource type="Script" uid="uid://dd4nvlbff0hng" path="res://enemy_area_1.gd" id="2_ta5nu"]
+[ext_resource type="Script" uid="uid://w8b16q26gd5a" path="res://area_2d_2.gd" id="2_x0ka3"]
+[ext_resource type="Texture2D" uid="uid://dv0bnwr40o8q6" path="res://Smiley Virus Spritesheet.png" id="3_flf07"]
+[ext_resource type="Texture2D" uid="uid://dvucma4ighcfq" path="res://Grass Wall Corner.png" id="3_kdubu"]
+[ext_resource type="Script" uid="uid://c20vvxbdtv7xw" path="res://character_body_2d.gd" id="3_q6r6c"]
+[ext_resource type="Texture2D" uid="uid://3xb4dmrx2v51" path="res://Attack File New.png" id="4_fs4d3"]
+[ext_resource type="Texture2D" uid="uid://cx16aypoh8ihv" path="res://Grass Wall Edge.png" id="4_kdubu"]
+[ext_resource type="Script" uid="uid://b72cjkr5ysy3l" path="res://combat_menu.gd" id="4_q5dlx"]
+[ext_resource type="Script" uid="uid://bdwirh50xahb7" path="res://canvas_layer.gd" id="4_x0ka3"]
+[ext_resource type="Script" uid="uid://scuy1306cumi" path="res://response_message.gd" id="5_7plk7"]
+[ext_resource type="Texture2D" uid="uid://bskpqoftiql08" path="res://Click Indicator.png" id="5_7vxoj"]
+[ext_resource type="Script" uid="uid://4we4vfva6ig4" path="res://line_edit.gd" id="5_c4wnb"]
+[ext_resource type="Texture2D" uid="uid://dkrkx5m4a711b" path="res://Grass Wall.png" id="5_d21ai"]
+[ext_resource type="BitMap" uid="uid://brbxy4s8mxxxa" path="res://Attack File Bitmap.png" id="6_7vxoj"]
+[ext_resource type="Texture2D" uid="uid://p6lw1s0swb4b" path="res://IT'S ALL GREEN.png" id="6_rj586"]
+[ext_resource type="Script" uid="uid://mv3osm84ly50" path="res://byte_count.gd" id="6_xjt7e"]
+[ext_resource type="Script" uid="uid://cikuu1b7bnovg" path="res://texture_button.gd" id="7_e8dv2"]
+[ext_resource type="Texture2D" uid="uid://cepokluboiemq" path="res://Tactics File New.png" id="7_ei405"]
+[ext_resource type="Script" uid="uid://bnhsddiumc34a" path="res://texture_button_2.gd" id="9_2nhjh"]
+[ext_resource type="Script" uid="uid://f1fj6vmv5mb5" path="res://tile_map_layer.gd" id="9_hqns4"]
+[ext_resource type="Script" uid="uid://f786tds48u7o" path="res://back_arrow.gd" id="10_bjha6"]
+[ext_resource type="Script" uid="uid://bg2aiya8amhew" path="res://block_attack.gd" id="11_ebxd8"]
+[ext_resource type="Texture2D" uid="uid://bed4f5r3v4ptn" path="res://Block New.png" id="12_2u7jv"]
+[ext_resource type="BitMap" uid="uid://ceuhk8oedktt1" path="res://Block New Bitmap.png" id="12_24dk6"]
+[ext_resource type="Script" uid="uid://dubhl8jw5hobl" path="res://combat_protogent.gd" id="12_gt76g"]
+[ext_resource type="Script" uid="uid://b3miakncebfi3" path="res://smiley_virus.gd" id="14_1fr6y"]
+[ext_resource type="Texture2D" uid="uid://cg8bpjq2dcu31" path="res://Protogent Punch New.png" id="14_6ip5v"]
+[ext_resource type="BitMap" uid="uid://crjd6ymbyhgbv" path="res://Protogent Punch New Bitmap.png" id="15_q5dlx"]
+[ext_resource type="Script" uid="uid://dqvh6te56pb16" path="res://protogent_punch_attack.gd" id="16_c4wnb"]
+[ext_resource type="Script" uid="uid://bo05eavf0x37w" path="res://notification.gd" id="18_cnnru"]
+[ext_resource type="Texture2D" uid="uid://d1tm8wp4rr5kh" path="res://New Mail.png" id="18_ornx7"]
+[ext_resource type="Texture2D" uid="uid://cxah2pjphmmo2" path="res://Mail Opened.png" id="19_cnnru"]
+[ext_resource type="Texture2D" uid="uid://5k4l0bb6nm0d" path="res://Block Sign Only.png" id="20_fbwgr"]
+[ext_resource type="Texture2D" uid="uid://7qqerow155rb" path="res://Recycle File New.png" id="21_3ngjr"]
+[ext_resource type="Script" uid="uid://rluj7ixe6oji" path="res://mail.gd" id="21_6ip5v"]
+[ext_resource type="Script" uid="uid://ix328c1b560k" path="res://block_sign_attack.gd" id="21_7mj2a"]
+[ext_resource type="BitMap" uid="uid://c57si4a1kiu1e" path="res://Recycle File Bitmap.png" id="22_qilgh"]
+[ext_resource type="Script" uid="uid://dt5qfp5nufelc" path="res://recycle_tactics.gd" id="23_4qosj"]
+[ext_resource type="Texture2D" uid="uid://bdwk7q755u31l" path="res://YOU ARE AN IDIOT Spritesheet.png" id="26_lbrxf"]
+[ext_resource type="Script" uid="uid://cqqd277eudiun" path="res://smiley_virus_attack.gd" id="27_xjt7e"]
+
+[sub_resource type="Gradient" id="Gradient_k73cj"]
+interpolation_mode = 1
+offsets = PackedFloat32Array(0, 0.312)
+colors = PackedColorArray(1.0039216, 0, 0, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_rjqkl"]
+gradient = SubResource("Gradient_k73cj")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k73cj"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0xo8l"]
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q5dlx"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c4wnb"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7plk7"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_bjha6"]
+resource_name = "new_animation"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CombatProtogent:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2i(8, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_gt76g"]
+resource_name = "Protogent Combat Idle"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CombatProtogent:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Vector2i(0, 0), Vector2i(1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_1fr6y"]
+resource_name = "Protogent Combat Punch"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CombatProtogent:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [Vector2i(4, 0), Vector2i(5, 0), Vector2i(6, 0), Vector2i(5, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_2hxjc"]
+resource_name = "Protogent Combat Walk"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CombatProtogent:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [Vector2i(2, 0), Vector2i(1, 0), Vector2i(3, 0), Vector2i(1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_ebxd8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CombatProtogent:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2i(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2u7jv"]
+_data = {
+&"Protogent Combat Hurt": SubResource("Animation_bjha6"),
+&"Protogent Combat Idle": SubResource("Animation_gt76g"),
+&"Protogent Combat Punch": SubResource("Animation_1fr6y"),
+&"Protogent Combat Walk": SubResource("Animation_2hxjc"),
+&"RESET": SubResource("Animation_ebxd8")
+}
+
+[sub_resource type="Animation" id="Animation_2u7jv"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2i(1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_mryly"]
+resource_name = "Virus Attack"
+length = 2.2
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.099999994, 0.19999999, 0.3, 0.4, 0.5, 0.6, 0.7, 0.9, 1, 1.1, 2, 2.1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Vector2i(1, 0), Vector2i(2, 0), Vector2i(3, 0), Vector2i(1, 0), Vector2i(2, 0), Vector2i(3, 0), Vector2i(2, 0), Vector2i(1, 0), Vector2i(4, 0), Vector2i(5, 0), Vector2i(6, 0), Vector2i(5, 0), Vector2i(4, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_c4wnb"]
+resource_name = "Virus Hurt"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2i(7, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_24dk6"]
+resource_name = "Virus Idle"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Vector2i(1, 0), Vector2i(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mryly"]
+_data = {
+&"RESET": SubResource("Animation_2u7jv"),
+&"Virus Attack": SubResource("Animation_mryly"),
+&"Virus Hurt": SubResource("Animation_c4wnb"),
+&"Virus Idle": SubResource("Animation_24dk6")
+}
+
+[sub_resource type="Animation" id="Animation_0xo8l"]
+resource_name = "Normal"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Vector2i(0, 0), Vector2i(1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_xfyss"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2i(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3ngjr"]
+_data = {
+&"Normal": SubResource("Animation_0xo8l"),
+&"RESET": SubResource("Animation_xfyss")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ta5nu"]
+radius = 275.0
+
+[sub_resource type="Animation" id="Animation_k73cj"]
+resource_name = "Idle"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../EnemyArea1/Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [1, 0]
+}
+
+[sub_resource type="Animation" id="Animation_rjqkl"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../EnemyArea1/Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fs4d3"]
+_data = {
+&"Idle": SubResource("Animation_k73cj"),
+&"RESET": SubResource("Animation_rjqkl")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rj586"]
+size = Vector2(641, 45)
+
+[sub_resource type="Animation" id="Animation_hqns4"]
+resource_name = "Fade"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_x0ka3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0h7mo"]
+_data = {
+&"Fade": SubResource("Animation_hqns4"),
+&"RESET": SubResource("Animation_x0ka3")
+}
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_rj586"]
+tile_data = PackedInt32Array(0, 1, 0, 65536, 1, 0, 131072, 1, 0, 196608, 1, 0, 262144, 0, 1610612736, 1, 1, 805306368, 65537, 1, 805306368, 131073, 1, 805306368, 196609, 1, 805306368, 262145, 1, 1610612736, 262146, 2, 1342177280, 262147, 2, 1342177280, 262148, 2, 1342177280, 5, 1, 0, 65541, 1, 0, 131077, 1, 0, 196613, 1, 0, 262149, 1, 1610612736, 6, 1, 805306368, 65542, 1, 805306368, 131078, 1, 805306368, 196614, 1, 805306368, 262150, 0, 805306368)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_hqns4"]
+tile_data = PackedInt32Array(0, 1, 1610612736, 262144, 1, 1342177280, 1, 1, 1610612736, 262145, 1, 1342177280, 2, 0, 805306368, 262146, 0, 1342177280, 6, 1, 0, 65542, 1, 0, 131078, 1, 0, 196614, 1, 0, 262150, 1, 0, 7, 1, 805306368, 65543, 1, 805306368, 131079, 1, 805306368, 196615, 1, 805306368, 262151, 1, 805306368)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_x0ka3"]
+tile_data = PackedInt32Array(0, 0, 0, 65536, 1, 0, 131072, 1, 0, 196608, 1, 0, 262144, 0, 1610612736, 1, 1, 1342177280, 65537, 1, 805306368, 131073, 1, 805306368, 196609, 1, 805306368, 262145, 1, 1610612736, 2, 2, 1342177280, 262146, 2, 1342177280, 3, 2, 1342177280, 262147, 2, 1342177280, 4, 2, 1342177280, 262148, 2, 1342177280, 5, 2, 1342177280, 262149, 2, 1342177280, 6, 2, 1342177280, 262150, 2, 1342177280, 7, 2, 1342177280, 262151, 2, 1342177280)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_ta5nu"]
+tile_data = PackedInt32Array(0, 1, 1610612736, 262144, 1, 1342177280, 1, 1, 1610612736, 262145, 1, 1342177280, 2, 1, 1610612736, 262146, 0, 1342177280, 3, 1, 1610612736, 4, 1, 1610612736, 5, 1, 1610612736, 6, 3, 0, 65542, 1, 0, 131078, 1, 0, 196614, 1, 0, 262150, 1, 0, 7, 1, 805306368, 65543, 1, 805306368, 131079, 1, 805306368, 196615, 1, 805306368, 262151, 1, 805306368)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kdubu"]
+texture = ExtResource("3_kdubu")
+texture_region_size = Vector2i(100, 100)
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-49.5, -50, 49.5, -50, 49.5, 50, -49.5, 50)
+6:5/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+9:9/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+9:1/0 = 0
+9:2/0 = 0
+9:3/0 = 0
+9:4/0 = 0
+9:5/0 = 0
+9:6/0 = 0
+9:7/0 = 0
+8:6/0 = 0
+8:5/0 = 0
+7:4/0 = 0
+7:3/0 = 0
+7:2/0 = 0
+6:2/0 = 0
+6:1/0 = 0
+6:3/0 = 0
+8:3/0 = 0
+8:2/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+8:4/0 = 0
+7:5/0 = 0
+6:4/0 = 0
+4:6/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:9/0 = 0
+7:9/0 = 0
+5:6/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+3:8/0 = 0
+2:7/0 = 0
+1:7/0 = 0
+0:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+2:9/0 = 0
+1:9/0 = 0
+0:9/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d21ai"]
+texture = ExtResource("4_kdubu")
+texture_region_size = Vector2i(100, 100)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-49.5, -50, 49.5, -50, 49.5, 50, -49.5, 50)
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rj586"]
+texture = ExtResource("5_d21ai")
+texture_region_size = Vector2i(100, 100)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-49.5, -50, 49.5, -50, 49.5, 50, -49.5, 50)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4d7sh"]
+texture = ExtResource("6_rj586")
+texture_region_size = Vector2i(100, 100)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-49.5, -50, 49.5, -50, 49.5, 50, -49.5, 50)
+
+[sub_resource type="TileSet" id="TileSet_rj586"]
+tile_size = Vector2i(99, 100)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_kdubu")
+sources/1 = SubResource("TileSetAtlasSource_d21ai")
+sources/2 = SubResource("TileSetAtlasSource_rj586")
+sources/3 = SubResource("TileSetAtlasSource_4d7sh")
+pattern_0 = SubResource("TileMapPattern_rj586")
+pattern_1 = SubResource("TileMapPattern_hqns4")
+pattern_2 = SubResource("TileMapPattern_x0ka3")
+pattern_3 = SubResource("TileMapPattern_ta5nu")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hqns4"]
+size = Vector2(34.848473, 38.95835)
+
+[sub_resource type="Animation" id="Animation_ir8iy"]
+resource_name = "CombatStart"
+length = 0.6333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.033333335),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [7]
+}
+
+[sub_resource type="Animation" id="Animation_epypp"]
+resource_name = "Idle"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+
+[sub_resource type="Animation" id="Animation_0hol4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_q6r6c"]
+resource_name = "Walk"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [2, 1, 3, 1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_q6r6c"]
+_data = {
+&"CombatStart": SubResource("Animation_ir8iy"),
+&"Idle": SubResource("Animation_epypp"),
+&"RESET": SubResource("Animation_0hol4"),
+&"Walk": SubResource("Animation_q6r6c")
+}
+
+[node name="Node2D" type="Node2D" unique_id=464373501]
+script = ExtResource("1_0hol4")
+
+[node name="BattleUI" type="CanvasLayer" parent="." unique_id=813608394]
+layer = 3
+
+[node name="Control" type="Control" parent="BattleUI" unique_id=192689775]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -557.0
+offset_top = -401.5
+offset_right = 557.0
+offset_bottom = 402.5
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(557, 402)
+script = ExtResource("2_k73cj")
+
+[node name="Combat Background" type="PanelContainer" parent="BattleUI/Control" unique_id=1255784077]
+layout_mode = 0
+offset_left = -159.0
+offset_top = -140.5
+offset_right = 1260.0524
+offset_bottom = 950.5
+
+[node name="NinePatchRect" type="NinePatchRect" parent="BattleUI/Control/Combat Background" unique_id=38417832]
+layout_mode = 2
+texture = ExtResource("2_flf07")
+
+[node name="Webpage Border Top" type="PanelContainer" parent="BattleUI/Control" unique_id=1902581108]
+layout_mode = 0
+offset_left = -159.0
+offset_top = -139.5
+offset_right = 1259.6
+offset_bottom = -107.5
+
+[node name="ColorRect" type="ColorRect" parent="BattleUI/Control/Webpage Border Top" unique_id=544608500]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="BattleUI/Control/Webpage Border Top" unique_id=2030617601]
+layout_mode = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "[center]Protogent Antivirus: Virus Deletion in Progress[/center]"
+
+[node name="X Button" type="TextureRect" parent="BattleUI/Control" unique_id=1750337781]
+texture_filter = 1
+layout_mode = 0
+offset_left = 1209.6
+offset_top = -155.5
+offset_right = 1273.6
+offset_bottom = -91.5
+texture = SubResource("GradientTexture2D_rjqkl")
+
+[node name="Line2D" type="Line2D" parent="BattleUI/Control/X Button" unique_id=1017394221]
+position = Vector2(24.5, 24.5)
+scale = Vector2(0.3, 0.3)
+points = PackedVector2Array(0, 0, 50, 50, 25, 25, 50, 0, 0, 50)
+
+[node name="Combat Menu" type="PanelContainer" parent="BattleUI/Control" unique_id=417076960]
+layout_mode = 0
+offset_left = -107.0
+offset_top = -59.5
+offset_right = 691.0
+offset_bottom = 315.5
+theme_override_styles/panel = SubResource("StyleBoxFlat_k73cj")
+script = ExtResource("4_q5dlx")
+
+[node name="ColorRect" type="ColorRect" parent="BattleUI/Control/Combat Menu" unique_id=2062707108]
+layout_mode = 2
+
+[node name="Instruction" type="RichTextLabel" parent="BattleUI/Control/Combat Menu" unique_id=627102878]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 25
+bbcode_enabled = true
+text = " Set the Vector2 position to the coordinates 200, -200:"
+
+[node name="ResponseMessage" type="ColorRect" parent="BattleUI/Control" unique_id=1999828492]
+layout_mode = 0
+offset_left = -97.0
+offset_top = 272.5
+offset_right = 681.0
+offset_bottom = 305.5
+script = ExtResource("5_7plk7")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="BattleUI/Control/ResponseMessage" unique_id=1991636689]
+texture_filter = 1
+layout_mode = 0
+offset_top = 2.0
+offset_right = 778.0
+offset_bottom = 37.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 25
+bbcode_enabled = true
+scroll_active = false
+
+[node name="Byte Count" type="PanelContainer" parent="BattleUI/Control" unique_id=1064683280]
+layout_mode = 0
+offset_left = 1062.0
+offset_top = -102.5
+offset_right = 1259.0
+offset_bottom = -35.5
+theme_override_styles/panel = SubResource("StyleBoxFlat_0xo8l")
+script = ExtResource("6_xjt7e")
+
+[node name="ColorRect" type="ColorRect" parent="BattleUI/Control/Byte Count" unique_id=817544775]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="BattleUI/Control/Byte Count" unique_id=797349233]
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 40
+bbcode_enabled = true
+text = "[center][color=blue]5/5 Bytes[/color][/center]"
+scroll_active = false
+
+[node name="LineEdit" type="LineEdit" parent="BattleUI/Control" unique_id=1263013185]
+texture_filter = 1
+layout_mode = 0
+offset_left = -41.0
+offset_top = 197.5
+offset_right = 262.0
+offset_bottom = 238.5
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_q5dlx")
+theme_override_styles/read_only = SubResource("StyleBoxFlat_c4wnb")
+theme_override_styles/focus = SubResource("StyleBoxFlat_7plk7")
+caret_blink = true
+script = ExtResource("5_c4wnb")
+
+[node name="TextureButton" type="TextureButton" parent="BattleUI/Control" unique_id=196120706]
+texture_filter = 1
+layout_mode = 0
+offset_left = -138.0
+offset_top = -84.5
+offset_right = 152.0
+offset_bottom = 205.5
+texture_normal = ExtResource("4_fs4d3")
+texture_click_mask = ExtResource("6_7vxoj")
+stretch_mode = 0
+script = ExtResource("7_e8dv2")
+
+[node name="TextureRect" type="TextureRect" parent="BattleUI/Control/TextureButton" unique_id=1856754012]
+texture_filter = 1
+layout_mode = 0
+offset_left = 135.0
+offset_top = 94.0
+offset_right = 235.0
+offset_bottom = 194.0
+mouse_filter = 2
+texture = ExtResource("5_7vxoj")
+
+[node name="TextureButton2" type="TextureButton" parent="BattleUI/Control" unique_id=454377364]
+texture_filter = 1
+layout_mode = 0
+offset_left = 48.0
+offset_top = -83.5
+offset_right = 338.0
+offset_bottom = 206.5
+texture_normal = ExtResource("7_ei405")
+texture_click_mask = ExtResource("6_7vxoj")
+stretch_mode = 0
+script = ExtResource("9_2nhjh")
+
+[node name="TextureRect" type="TextureRect" parent="BattleUI/Control/TextureButton2" unique_id=184281592]
+texture_filter = 1
+layout_mode = 0
+offset_left = 135.0
+offset_top = 94.0
+offset_right = 235.0
+offset_bottom = 194.0
+mouse_filter = 2
+texture = ExtResource("5_7vxoj")
+
+[node name="Back Arrow" type="TextureButton" parent="BattleUI/Control" unique_id=1153642904]
+layout_mode = 0
+offset_left = -86.0
+offset_top = 240.5
+offset_right = -27.0
+offset_bottom = 299.5
+script = ExtResource("10_bjha6")
+
+[node name="Line2D" type="Line2D" parent="BattleUI/Control/Back Arrow" unique_id=1599734575]
+position = Vector2(57, 27.5)
+points = PackedVector2Array(0, 0, -50, 0, -25, -25, -50, 0, -25, 25)
+default_color = Color(0, 0, 0, 1)
+
+[node name="BlockAttack" type="TextureButton" parent="BattleUI/Control" unique_id=2001821610]
+texture_filter = 1
+layout_mode = 0
+offset_left = -143.0
+offset_top = -108.5
+offset_right = 169.0
+offset_bottom = 203.5
+texture_normal = ExtResource("12_2u7jv")
+texture_click_mask = ExtResource("12_24dk6")
+stretch_mode = 0
+script = ExtResource("11_ebxd8")
+
+[node name="TextureRect" type="TextureRect" parent="BattleUI/Control/BlockAttack" unique_id=679280825]
+texture_filter = 1
+layout_mode = 0
+offset_left = 139.0
+offset_top = 138.0
+offset_right = 239.0
+offset_bottom = 238.0
+mouse_filter = 2
+texture = ExtResource("5_7vxoj")
+
+[node name="ProtogentPunchAttack" type="TextureButton" parent="BattleUI/Control" unique_id=1959744858]
+texture_filter = 1
+layout_mode = 0
+offset_left = 33.0
+offset_top = -109.5
+offset_right = 347.0
+offset_bottom = 204.5
+texture_normal = ExtResource("14_6ip5v")
+texture_click_mask = ExtResource("15_q5dlx")
+stretch_mode = 0
+script = ExtResource("16_c4wnb")
+
+[node name="TextureRect" type="TextureRect" parent="BattleUI/Control/ProtogentPunchAttack" unique_id=1936038519]
+texture_filter = 1
+layout_mode = 0
+offset_left = 146.0
+offset_top = 141.0
+offset_right = 246.0
+offset_bottom = 241.0
+mouse_filter = 2
+texture = ExtResource("5_7vxoj")
+
+[node name="RecycleTactics" type="TextureButton" parent="BattleUI/Control" unique_id=2021382103]
+texture_filter = 1
+layout_mode = 0
+offset_left = -148.0
+offset_top = -99.5
+offset_right = 178.0
+offset_bottom = 226.5
+texture_normal = ExtResource("21_3ngjr")
+texture_click_mask = ExtResource("22_qilgh")
+stretch_mode = 0
+script = ExtResource("23_4qosj")
+
+[node name="TextureRect" type="TextureRect" parent="BattleUI/Control/RecycleTactics" unique_id=669192185]
+texture_filter = 1
+layout_mode = 0
+offset_left = 149.0
+offset_top = 126.0
+offset_right = 249.0
+offset_bottom = 226.0
+mouse_filter = 2
+texture = ExtResource("5_7vxoj")
+
+[node name="CombatProtogent" type="Sprite2D" parent="BattleUI/Control" unique_id=1721921289]
+texture_filter = 1
+position = Vector2(-16, 648.5)
+scale = Vector2(4.1099997, 4.1099997)
+texture = ExtResource("2_0e48y")
+flip_h = true
+hframes = 9
+script = ExtResource("12_gt76g")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="BattleUI/Control/CombatProtogent" unique_id=703174832]
+visible = false
+offset_left = -24.087585
+offset_top = -57.90754
+offset_right = 21.00824
+offset_bottom = -27.693336
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "[color=red]-200[/color]"
+scroll_active = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="BattleUI/Control/CombatProtogent" unique_id=1633200820]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_2u7jv")
+
+[node name="SmileyVirus" type="Sprite2D" parent="BattleUI/Control" unique_id=1478376971]
+texture_filter = 1
+position = Vector2(1058, 653.50006)
+scale = Vector2(4.435001, 4.435001)
+texture = ExtResource("3_flf07")
+hframes = 8
+frame = 1
+script = ExtResource("14_1fr6y")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="BattleUI/Control/SmileyVirus" unique_id=1343038427]
+visible = false
+offset_left = -22.998869
+offset_top = -42.39009
+offset_right = 22.096956
+offset_bottom = -12.175888
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 20
+text = "-500"
+scroll_active = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="BattleUI/Control/SmileyVirus" unique_id=1711558736]
+libraries/ = SubResource("AnimationLibrary_mryly")
+
+[node name="BlockSignAttack" type="TextureRect" parent="BattleUI/Control" unique_id=1094087709]
+visible = false
+z_index = 3
+texture_filter = 1
+layout_mode = 0
+offset_left = 751.0
+offset_top = -471.5
+offset_right = 1354.0
+offset_bottom = 131.5
+texture = ExtResource("20_fbwgr")
+script = ExtResource("21_7mj2a")
+
+[node name="SmileyVirusAttack" type="Sprite2D" parent="BattleUI/Control" unique_id=1348608667]
+texture_filter = 1
+position = Vector2(1059, 714.5)
+scale = Vector2(3.69, 3.69)
+texture = ExtResource("26_lbrxf")
+hframes = 2
+script = ExtResource("27_xjt7e")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="BattleUI/Control/SmileyVirusAttack" unique_id=844748604]
+libraries/ = SubResource("AnimationLibrary_3ngjr")
+
+[node name="Mail" type="TextureButton" parent="." unique_id=1261983823]
+texture_filter = 1
+offset_left = 867.5
+offset_top = 446.5
+offset_right = 1050.5
+offset_bottom = 629.5
+toggle_mode = true
+action_mode = 0
+texture_normal = ExtResource("18_ornx7")
+texture_pressed = ExtResource("19_cnnru")
+stretch_mode = 0
+script = ExtResource("21_6ip5v")
+
+[node name="TextureRect" type="TextureRect" parent="Mail" unique_id=1306328432]
+texture_filter = 1
+layout_mode = 0
+offset_left = 96.0
+offset_top = 82.0
+offset_right = 196.0
+offset_bottom = 182.0
+mouse_filter = 2
+texture = ExtResource("5_7vxoj")
+
+[node name="EnemyArea1" type="Area2D" parent="." unique_id=72779355]
+script = ExtResource("2_ta5nu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyArea1" unique_id=102192371]
+position = Vector2(476, 538)
+shape = SubResource("CircleShape2D_ta5nu")
+
+[node name="Sprite2D" type="Sprite2D" parent="EnemyArea1" unique_id=783134176]
+texture_filter = 1
+position = Vector2(476, 491)
+scale = Vector2(2.549999, 2.549999)
+texture = ExtResource("3_flf07")
+hframes = 8
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="EnemyArea1" unique_id=651066515]
+libraries/ = SubResource("AnimationLibrary_fs4d3")
+
+[node name="Area2D4" type="Area2D" parent="." unique_id=1222649980]
+script = ExtResource("2_nr8wp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D4" unique_id=1192700961]
+position = Vector2(1896, 548)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_rj586")
+
+[node name="Area2D3" type="Area2D" parent="." unique_id=276654719]
+script = ExtResource("2_0h7mo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3" unique_id=1816694814]
+position = Vector2(24, 548)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_rj586")
+
+[node name="Area2D2" type="Area2D" parent="." unique_id=1130939610]
+script = ExtResource("2_x0ka3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2" unique_id=2069972921]
+position = Vector2(962, 1067)
+shape = SubResource("RectangleShape2D_rj586")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=178307888]
+script = ExtResource("2_ir8iy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2045546954]
+position = Vector2(963.5, 23.5)
+shape = SubResource("RectangleShape2D_rj586")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=2079698767]
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground" unique_id=232617510]
+visible = false
+texture_filter = 1
+offset_right = 383.39996
+offset_bottom = 217.4
+scale = Vector2(5, 5)
+texture = ExtResource("1_wtcfe")
+stretch_mode = 1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1302713312]
+script = ExtResource("4_x0ka3")
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=378813750]
+visible = false
+z_index = 1
+offset_right = 1925.0
+offset_bottom = 1113.0
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer" unique_id=1960889541]
+libraries/ = SubResource("AnimationLibrary_0h7mo")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="CanvasLayer" unique_id=1350359287]
+texture_filter = 1
+scale = Vector2(2.16, 2.16)
+tile_set = SubResource("TileSet_rj586")
+script = ExtResource("9_hqns4")
+
+[node name="Notification" type="ColorRect" parent="CanvasLayer" unique_id=1964777819]
+offset_left = 2.0
+offset_top = 959.0
+offset_right = 1914.0
+offset_bottom = 1019.0
+script = ExtResource("18_cnnru")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Notification" unique_id=2141133414]
+layout_mode = 0
+offset_top = 9.0
+offset_right = 1911.0
+offset_bottom = 58.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 30
+theme_override_font_sizes/bold_font_size = 30
+bbcode_enabled = true
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1529190317]
+process_mode = 3
+position = Vector2(0, -225)
+script = ExtResource("3_q6r6c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1286421333]
+position = Vector2(960.00006, 796.50006)
+scale = Vector2(2.64, 4.8000007)
+shape = SubResource("RectangleShape2D_hqns4")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1024022979]
+process_mode = 3
+texture_filter = 1
+position = Vector2(960, 780)
+scale = Vector2(2.4000003, 2.4000003)
+texture = ExtResource("2_0e48y")
+hframes = 9
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D" unique_id=1500255395]
+process_mode = 3
+libraries/ = SubResource("AnimationLibrary_q6r6c")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1073285530]
+top_level = true
+position = Vector2(960, 549)
+limit_enabled = false
+
+[connection signal="_response" from="BattleUI/Control/LineEdit" to="BattleUI/Control/ResponseMessage" method="_on_line_edit__response"]
+[connection signal="text_submitted" from="BattleUI/Control/LineEdit" to="BattleUI/Control/LineEdit" method="_on_text_submitted"]
+[connection signal="button_down" from="BattleUI/Control/TextureButton" to="BattleUI/Control/TextureButton" method="_on_button_down"]
+[connection signal="mouse_entered" from="BattleUI/Control/TextureButton" to="BattleUI/Control/TextureButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="BattleUI/Control/TextureButton" to="BattleUI/Control/TextureButton" method="_on_mouse_exited"]
+[connection signal="button_down" from="BattleUI/Control/TextureButton2" to="BattleUI/Control/TextureButton2" method="_on_button_down"]
+[connection signal="mouse_entered" from="BattleUI/Control/TextureButton2" to="BattleUI/Control/TextureButton2" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="BattleUI/Control/TextureButton2" to="BattleUI/Control/TextureButton2" method="_on_mouse_exited"]
+[connection signal="button_down" from="BattleUI/Control/Back Arrow" to="BattleUI/Control/Back Arrow" method="_on_button_down"]
+[connection signal="button_down" from="BattleUI/Control/BlockAttack" to="BattleUI/Control/BlockAttack" method="_on_button_down"]
+[connection signal="mouse_entered" from="BattleUI/Control/BlockAttack" to="BattleUI/Control/BlockAttack" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="BattleUI/Control/BlockAttack" to="BattleUI/Control/BlockAttack" method="_on_mouse_exited"]
+[connection signal="button_down" from="BattleUI/Control/ProtogentPunchAttack" to="BattleUI/Control/ProtogentPunchAttack" method="_on_button_down"]
+[connection signal="mouse_entered" from="BattleUI/Control/ProtogentPunchAttack" to="BattleUI/Control/ProtogentPunchAttack" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="BattleUI/Control/ProtogentPunchAttack" to="BattleUI/Control/ProtogentPunchAttack" method="_on_mouse_exited"]
+[connection signal="button_down" from="BattleUI/Control/RecycleTactics" to="BattleUI/Control/RecycleTactics" method="_on_button_down"]
+[connection signal="mouse_entered" from="BattleUI/Control/RecycleTactics" to="BattleUI/Control/RecycleTactics" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="BattleUI/Control/RecycleTactics" to="BattleUI/Control/RecycleTactics" method="_on_mouse_exited"]
+[connection signal="messageProtogentPunch" from="Mail" to="CanvasLayer/Notification" method="_on_mail_message_protogent_punch"]
+[connection signal="mouse_entered" from="Mail" to="Mail" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Mail" to="Mail" method="_on_mouse_exited"]
+[connection signal="toggled" from="Mail" to="Mail" method="_on_toggled"]
+[connection signal="body_entered" from="EnemyArea1" to="EnemyArea1" method="_on_body_entered"]
+[connection signal="body_entered" from="Area2D4" to="Area2D4" method="_on_body_entered"]
+[connection signal="body_entered" from="Area2D3" to="Area2D3" method="_on_body_entered"]
+[connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_body_entered"]
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="_sceneChange" from="CanvasLayer" to="Mail" method="_on_canvas_layer__scene_change"]
+[connection signal="_sceneChange" from="CanvasLayer" to="EnemyArea1" method="_on_canvas_layer__scene_change"]
+[connection signal="_sceneChange" from="CanvasLayer" to="Area2D4" method="_on_canvas_layer__scene_change"]
+[connection signal="_sceneChange" from="CanvasLayer" to="Area2D3" method="_on_canvas_layer__scene_change"]
+[connection signal="_sceneChange" from="CanvasLayer" to="Area2D2" method="_on_canvas_layer__scene_change"]
+[connection signal="_sceneChange" from="CanvasLayer" to="Area2D" method="_on_canvas_layer__scene_change"]
+[connection signal="_sceneChange" from="CanvasLayer" to="CanvasLayer/TileMapLayer" method="_on_canvas_layer__scene_change"]
+[connection signal="_sceneChange" from="CanvasLayer" to="CharacterBody2D" method="_on_canvas_layer__scene_change"]

@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://ceuhk8oedktt1"
+path="res://.godot/imported/Block New Bitmap.png-f8acf28fe4a3fd41576a1dd43bc234fb.res"
+
+[deps]
+
+source_file="res://Block New Bitmap.png"
+dest_files=["res://.godot/imported/Block New Bitmap.png-f8acf28fe4a3fd41576a1dd43bc234fb.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

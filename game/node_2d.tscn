@@ -1007,7 +1007,7 @@ libraries/ = SubResource("AnimationLibrary_mryly")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="BattleUI/Control/SmileyVirus" unique_id=1712960408]
 stream = ExtResource("31_b8fb0")
-volume_db = -20.0
+volume_db = -10.0
 
 [node name="BlockSignAttack" type="TextureRect" parent="BattleUI/Control" unique_id=1094087709]
 visible = false

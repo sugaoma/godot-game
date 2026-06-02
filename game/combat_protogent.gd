@@ -4,7 +4,6 @@ extends Sprite2D
 var tween = create_tween()
 
 func _ready() -> void:
-	print(position)
 	$RichTextLabel.hide()
 	Global._playerAttack.connect(_on_playerAttack)
 	Global._enemyAttack.connect(_on_enemyAttack)
@@ -47,7 +46,16 @@ func _on_enemyAttack():
 	await get_tree().create_timer(2.3).timeout
 	$AnimationPlayer.play("Protogent Combat Hurt")
 	$RichTextLabel.show()
-	await get_tree().create_timer(0.8).timeout
+	for i in range(2):
+		tween = create_tween()
+		tween.tween_property(self, "position", Vector2(-66, 648.5),0.2)
+		await tween.finished
+		tween = create_tween()
+		tween.tween_property(self, "position", Vector2(34, 648.5),0.2)
+		await tween.finished
+	tween = create_tween()
+	tween.tween_property(self, "position", Vector2(-16, 648.5),0.2)
+	await tween.finished
 	$RichTextLabel.hide()
 	$AnimationPlayer.play("Protogent Combat Idle")
 	Global.actionType = ""

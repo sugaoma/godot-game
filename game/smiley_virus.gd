@@ -5,6 +5,7 @@ var tween = create_tween()
 var playerDamage = 0
 
 func _ready() -> void:
+	print(position)
 	$RichTextLabel.hide()
 	hide()
 	Global._tacticsTrial.connect(_on_tacticsTrial)
@@ -42,7 +43,14 @@ func _on_playerAttack():
 		$AnimationPlayer.play("Virus Hurt")
 		$RichTextLabel.text = "-%s" % [playerDamage]
 		$RichTextLabel.show()
-		await get_tree().create_timer(0.8).timeout
+		for i in range(2):
+			tween = create_tween()
+			tween.tween_property(self, "position", Vector2(1008, 653.5),0.2)
+			await tween.finished
+			tween = create_tween()
+			tween.tween_property(self, "position", Vector2(1108, 653.5),0.2)
+			await tween.finished
+		position = Vector2(1058, 653.5)
 		$RichTextLabel.hide()
 	if Global.enemyHP <= 0:
 		await get_tree().create_timer(1).timeout

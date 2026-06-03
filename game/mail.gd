@@ -3,6 +3,7 @@ extends TextureButton
 signal messageProtogentPunch
 
 func _ready() -> void:
+	mouse_filter = MOUSE_FILTER_STOP
 	$TextureRect.hide()
 	pass
 
@@ -31,6 +32,7 @@ func _on_mouse_exited():
 func _on_toggled(toggled_on: bool) -> void:
 	$AudioStreamPlayer.play()
 	if toggled_on:
+		mouse_filter = MOUSE_FILTER_IGNORE
 		Global.ownProtogentPunch = true
 		messageProtogentPunch.emit()
 		$TextureRect.hide()

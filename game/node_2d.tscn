@@ -1190,7 +1190,7 @@ mouse_filter = 2
 theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/normal_font_size = 100
 bbcode_enabled = true
-text = "[center]Thanks For Playing The Demo! Press The Button Below to Restart[/center]
+text = "[center]Thanks For Playing The Demo! The game will restart to the beginning in a few seconds[/center]
 "
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=378813750]

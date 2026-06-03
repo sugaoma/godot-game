@@ -3,6 +3,7 @@ extends PanelContainer
 var trueMaxBytes = 5
 
 func _ready() -> void:
+	trueMaxBytes = 5
 	Global._combatStart.connect(_on_combatStart)
 	Global._combatEnd.connect(_on_combatEnd)
 	Global._attackTrial.connect(_on_attackTrial)
@@ -13,8 +14,6 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_combatStart():
-	if Global.maxBytes > trueMaxBytes:
-		trueMaxBytes = Global.maxBytes
 	Global.maxBytes = trueMaxBytes
 	Global.bytes = Global.maxBytes
 	$RichTextLabel.text = "[center][color=blue]%s/%s Bytes[/color][/center]" % [Global.bytes, Global.maxBytes]

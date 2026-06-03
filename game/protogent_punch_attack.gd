@@ -1,6 +1,7 @@
 extends TextureButton
 
 func _ready() -> void:
+	Global.ownProtogentPunch = false
 	hide()
 	Global._combatChoice.connect(_on_combatChoice)
 	Global._attackTrial.connect(_on_attackTrial)

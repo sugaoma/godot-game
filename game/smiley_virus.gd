@@ -5,7 +5,6 @@ var tween = create_tween()
 var playerDamage = 0
 
 func _ready() -> void:
-	print(position)
 	$RichTextLabel.hide()
 	hide()
 	Global._tacticsTrial.connect(_on_tacticsTrial)

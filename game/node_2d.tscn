@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://dv0bnwr40o8q6" path="res://Smiley Virus Spritesheet.png" id="3_flf07"]
 [ext_resource type="Texture2D" uid="uid://dvucma4ighcfq" path="res://Grass Wall Corner.png" id="3_kdubu"]
 [ext_resource type="Script" uid="uid://c20vvxbdtv7xw" path="res://character_body_2d.gd" id="3_q6r6c"]
+[ext_resource type="AudioStream" uid="uid://dxcttmw4m5hrn" path="res://Overworld Music.mp3" id="3_whnp6"]
 [ext_resource type="Texture2D" uid="uid://3xb4dmrx2v51" path="res://Attack File New.png" id="4_fs4d3"]
 [ext_resource type="Texture2D" uid="uid://cx16aypoh8ihv" path="res://Grass Wall Edge.png" id="4_kdubu"]
 [ext_resource type="Script" uid="uid://b72cjkr5ysy3l" path="res://combat_menu.gd" id="4_q5dlx"]
@@ -58,6 +59,7 @@
 [ext_resource type="AudioStream" uid="uid://buvnncmpl7byv" path="res://Explosion Roblox.mp3" id="36_ma08v"]
 [ext_resource type="AudioStream" uid="uid://3esxq1x7debr" path="res://Ding Sound.mp3" id="40_s32dh"]
 [ext_resource type="AudioStream" uid="uid://qthwxq4e7cyi" path="res://Combat Enter Sound.mp3" id="45_037st"]
+[ext_resource type="AudioStream" uid="uid://ds234doqn3jcd" path="res://Walk Sound.mp3" id="59_6orn5"]
 
 [sub_resource type="Gradient" id="Gradient_k73cj"]
 interpolation_mode = 1
@@ -982,6 +984,10 @@ libraries/ = SubResource("AnimationLibrary_2u7jv")
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="BattleUI/Control/CombatProtogent" unique_id=1133649237]
 stream = ExtResource("28_2v765")
 
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="BattleUI/Control/CombatProtogent" unique_id=1862998055]
+stream = ExtResource("59_6orn5")
+parameters/looping = true
+
 [node name="SmileyVirus" type="Sprite2D" parent="BattleUI/Control" unique_id=1478376971]
 texture_filter = 1
 position = Vector2(1058, 653.50006)
@@ -1228,6 +1234,13 @@ libraries/ = SubResource("AnimationLibrary_q6r6c")
 top_level = true
 position = Vector2(960, 549)
 limit_enabled = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CharacterBody2D" unique_id=1560739479]
+stream = ExtResource("59_6orn5")
+parameters/looping = true
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="CharacterBody2D" unique_id=1316181794]
+stream = ExtResource("3_whnp6")
 
 [connection signal="_response" from="BattleUI/Control/LineEdit" to="BattleUI/Control/ResponseMessage" method="_on_line_edit__response"]
 [connection signal="text_submitted" from="BattleUI/Control/LineEdit" to="BattleUI/Control/LineEdit" method="_on_text_submitted"]

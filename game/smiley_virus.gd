@@ -43,13 +43,12 @@ func _on_playerAttack():
 		$AnimationPlayer.play("Virus Hurt")
 		$RichTextLabel.text = "-%s" % [playerDamage]
 		$RichTextLabel.show()
-		for i in range(2):
-			tween = create_tween()
-			tween.tween_property(self, "position", Vector2(1008, 653.5),0.2)
-			await tween.finished
-			tween = create_tween()
-			tween.tween_property(self, "position", Vector2(1108, 653.5),0.2)
-			await tween.finished
+		tween = create_tween()
+		tween.tween_property(self, "position", Vector2(1008, 653.5),0.2)
+		await tween.finished
+		tween = create_tween()
+		tween.tween_property(self, "position", Vector2(1108, 653.5),0.2)
+		await tween.finished
 		position = Vector2(1058, 653.5)
 		$RichTextLabel.hide()
 	if Global.enemyHP <= 0:
@@ -61,9 +60,12 @@ func _on_playerAttack():
 		Global._enemyAttack.emit()
 
 func _on_enemyAttack():
+	$AudioStreamPlayer.volume_db = -10
 	$AudioStreamPlayer.play()
 	$AnimationPlayer.play("Virus Attack")
 	await get_tree().create_timer(2.2).timeout
+	tween = create_tween()
+	tween.tween_property($AudioStreamPlayer, "volume_db", -60, 4)
 	$AnimationPlayer.play("Virus Idle")
 	await get_tree().create_timer(1.4).timeout
 	$AudioStreamPlayer.stop()

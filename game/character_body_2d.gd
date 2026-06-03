@@ -1,10 +1,12 @@
 extends CharacterBody2D
 #Protogent Sprite in Overworld
+var walkSound = false
 
 var movementState = "Enabled"
 var speed = 300
 
 func _ready():
+	$AudioStreamPlayer2.play()
 	Global._stopMovement.connect(_on_stopMovement)
 	Global._combatStart.connect(_on_combatStart)
 	Global._combatEnd.connect(_on_combatEnd)
@@ -28,6 +30,7 @@ func _physics_process(_delta):
 			play_idle_animation()
 	
 func play_walk_animation(movementDirection):
+	play_walk_sound()
 	if movementDirection.x > 0:
 		$Sprite2D.flip_h = true
 		$AnimationPlayer.play("Walk")
@@ -40,7 +43,14 @@ func play_walk_animation(movementDirection):
 		$AnimationPlayer.play("Walk")
 
 func play_idle_animation():
+	$AudioStreamPlayer.stop()
+	walkSound = false
 	$AnimationPlayer.play("Idle")
+
+func play_walk_sound():
+	if walkSound == false:
+		walkSound = true
+		$AudioStreamPlayer.play()
 
 func _on_canvas_layer__scene_change() -> void:
 	movementState = "Enabled"
@@ -59,7 +69,11 @@ func _on_stopMovement():
 	pass
 	
 func _on_combatStart():
+	$AudioStreamPlayer.stop()
+	$AudioStreamPlayer2.stop()
+	walkSound = false
 	$AnimationPlayer.play("CombatStart")
 	
 func _on_combatEnd():
+	$AudioStreamPlayer2.play()
 	movementState = "Enabled"

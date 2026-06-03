@@ -48,7 +48,9 @@ func _on_playerAttack():
 		tween = create_tween()
 		tween.tween_property(self, "position", Vector2(1108, 653.5),0.2)
 		await tween.finished
-		position = Vector2(1058, 653.5)
+		tween = create_tween()
+		tween.tween_property(self, "position", Vector2(1058, 653.5),0.2)
+		await tween.finished
 		$RichTextLabel.hide()
 	if Global.enemyHP <= 0:
 		await get_tree().create_timer(1).timeout

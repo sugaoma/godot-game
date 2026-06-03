@@ -2,8 +2,10 @@ extends PanelContainer
 
 var computerProgress = 0
 var coins = 0
+var question = 0
 
 func _ready() -> void:
+	Global.chosenTrial = randi_range(1, 4)
 	$Instruction.hide()
 	Global._combatStart.connect(_on_combatStart)
 	Global._combatEnd.connect(_on_combatEnd)
@@ -19,7 +21,10 @@ func _process(delta: float) -> void:
 
 
 func _on_attackTrial():
-	Global.chosenTrial = randi_range(1, 4)
+	question = randi_range(1, 4)
+	while question == Global.chosenTrial:
+		question = randi_range(1, 4)
+	Global.chosenTrial = question
 	if Global.chosenTrial == 1:
 		$Instruction.text = " Set the Vector2 position to the coordinates 200, -200:\n\n\tfunc _ready():\n\t\tposition = Vector2(\t\t\t\t\t\t\t\t\t\t\t)\n\t\tpass"
 	elif Global.chosenTrial == 2:

@@ -26,7 +26,8 @@ func _on_tacticsTrial():
 
 func _on_combatEnd():
 	Global.maxBytes = trueMaxBytes
-
+	Global.bytes = Global.maxBytes
+	$RichTextLabel.text = "[center][color=blue]%s/%s Bytes[/color][/center]" % [Global.bytes, Global.maxBytes]
 
 func _on_usb_increase_max_bytes() -> void:
 	trueMaxBytes += 1

@@ -22,6 +22,7 @@
 [ext_resource type="Texture2D" uid="uid://bskpqoftiql08" path="res://Click Indicator.png" id="5_7vxoj"]
 [ext_resource type="Script" uid="uid://4we4vfva6ig4" path="res://line_edit.gd" id="5_c4wnb"]
 [ext_resource type="Texture2D" uid="uid://dkrkx5m4a711b" path="res://Grass Wall.png" id="5_d21ai"]
+[ext_resource type="AudioStream" uid="uid://5a8rfb4vbnow" path="res://Victory Sound.mp3" id="5_m7xe6"]
 [ext_resource type="BitMap" uid="uid://brbxy4s8mxxxa" path="res://Attack File Bitmap.png" id="6_7vxoj"]
 [ext_resource type="Texture2D" uid="uid://p6lw1s0swb4b" path="res://IT'S ALL GREEN.png" id="6_rj586"]
 [ext_resource type="Script" uid="uid://mv3osm84ly50" path="res://byte_count.gd" id="6_xjt7e"]
@@ -50,6 +51,7 @@
 [ext_resource type="BitMap" uid="uid://c57si4a1kiu1e" path="res://Recycle File Bitmap.png" id="22_qilgh"]
 [ext_resource type="Script" uid="uid://dt5qfp5nufelc" path="res://recycle_tactics.gd" id="23_4qosj"]
 [ext_resource type="Texture2D" uid="uid://bdwk7q755u31l" path="res://YOU ARE AN IDIOT Spritesheet.png" id="26_lbrxf"]
+[ext_resource type="AudioStream" uid="uid://ud4uwndw5xyf" path="res://Recycle Sound.mp3" id="27_22e24"]
 [ext_resource type="Script" uid="uid://cqqd277eudiun" path="res://smiley_virus_attack.gd" id="27_xjt7e"]
 [ext_resource type="AudioStream" uid="uid://3l1mt6yeuyeq" path="res://Pan Sound.mp3" id="28_2v765"]
 [ext_resource type="AudioStream" uid="uid://dhwdkgh2c7o5s" path="res://Virus Sound.mp3" id="31_b8fb0"]
@@ -740,6 +742,10 @@ theme_override_font_sizes/normal_font_size = 25
 bbcode_enabled = true
 text = " Set the Vector2 position to the coordinates 200, -200:"
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="BattleUI/Control/Combat Menu" unique_id=1194490021]
+stream = ExtResource("5_m7xe6")
+volume_db = 10.0
+
 [node name="ResponseMessage" type="ColorRect" parent="BattleUI/Control" unique_id=1999828492]
 layout_mode = 0
 offset_left = -97.0
@@ -953,7 +959,7 @@ mouse_filter = 2
 texture = ExtResource("5_7vxoj")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="BattleUI/Control/RecycleTactics" unique_id=1727991546]
-stream = ExtResource("12_kfelt")
+stream = ExtResource("27_22e24")
 volume_db = 24.0
 
 [node name="CombatProtogent" type="Sprite2D" parent="BattleUI/Control" unique_id=1721921289]
@@ -1173,6 +1179,19 @@ stretch_mode = 1
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1302713312]
 script = ExtResource("4_x0ka3")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer" unique_id=1003603999]
+z_index = 2
+offset_left = 207.0
+offset_top = 195.0
+offset_right = 1717.0
+offset_bottom = 614.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/normal_font_size = 100
+bbcode_enabled = true
+text = "[center]Thanks For Playing The Demo! Press The Button Below to Restart[/center]
+"
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=378813750]
 visible = false

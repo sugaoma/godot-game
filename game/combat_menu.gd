@@ -49,6 +49,7 @@ func _on_combatStart():
 	$Instruction.hide()
 
 func _on_combatEnd():
+	$AudioStreamPlayer.play()
 	coins = randi_range(5, 12)
 	if computerProgress < 100:
 		computerProgress += 50

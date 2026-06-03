@@ -75,5 +75,6 @@ func _on_combatStart():
 	$AnimationPlayer.play("CombatStart")
 	
 func _on_combatEnd():
-	$AudioStreamPlayer2.play()
 	movementState = "Enabled"
+	await get_tree().create_timer(2).timeout
+	$AudioStreamPlayer2.play()

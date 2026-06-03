@@ -22,13 +22,13 @@ func _on_canvas_layer__scene_change() -> void:
 		position = Vector2(0, 0)
 		await get_tree().create_timer(0.1).timeout
 		$Sprite2D.show()
-		$CollisionShape2D.disabled = true
+		$CollisionShape2D.disabled = false
 		_play_idle_animation()
 	elif Global.mapID == 6 and enemyClearedMap6 == false:
 		position = Vector2(487, -360)
 		await get_tree().create_timer(0.1).timeout
 		$Sprite2D.show()
-		$CollisionShape2D.disabled = true
+		$CollisionShape2D.disabled = false
 		_play_idle_animation()
 	else:
 		$Sprite2D.hide()
